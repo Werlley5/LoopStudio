@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+:root {
+    --color-1: hsl(0, 0%, 100%);
+    --color-2: hsl(0, 0%, 0%);
+    --color-3: hsl(0, 0%, 55%);
+    --color-4: hsl(0, 0%, 41%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alata';
+}
+
+/*barra de navegação*/
+
+header {
+    height: 500px;
+    background-image: url('../img/image-hero.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.nav-main {
+    max-width: 90%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.nav-logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links ul li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: var(--color-1);
+}
+
+.nav-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.nav-title {
+    width: 50%;
+    border: 1px solid var(--color-1);
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.nav-title h1 {
+    color: var(--color-1);
+    font-family: 'Josefin Sans';
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 48px;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+/*---------------------------------------------*/
+
+/*conteúdo*/
+
+section.about {
+    padding-top: 100px;
+}
+
+.about-cont {
+    display: flex;
+    align-items: flex-end;
+    padding-left: 80px;
+}
+
+.about-img {
+    width: 50%;
+}
+
+.about-img img {
+    max-width: 100%;
+}
+
+.about-text {
+    width: 50%;
+    background-color: var(--color-1);
+    position: relative;
+    padding: 40px 0 0 40px;
+    right: 100px;
+    top: 40px;
+}
+
+.about-text h2 {
+    color: var(--color-2);
+    font-family: 'Josefin Sans';
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: var(--color-3);
+    font-size: 12px;
+}
+
+section.creations {
+    padding: 180px 0 100px 0;
+}
+
+.criations-cont {
+    max-width: 95%;
+    margin: 0 auto;
+    padding-left: 30px;
+}
+
+.criations-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.criations-title h2 {
+    color: var(--color-2);
+    font-family: 'Josefin Sans';
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 36px;
+}
+
+.btn-d {
+    display: inline-block;
+    padding: 5px 30px;
+    border: 1px solid var(--color-2);
+    border-radius: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-2);
+}
+
+.btn-d:hover {
+    background-color: var(--color-2);
+    color: var(--color-1);
+}
+
+.btn-m {
+    display: none;
+}
+
+.criations-img {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 80px;
+}
+
+.ct-img {
+    height: 350px;
+    width: calc(100% / 4.6);
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.ct-img:hover {
+    opacity: 0.3;
+}
+
+.ct-img:not(:last-child) {
+    margin: 0 20px 20px 0;
+}
+
+.bg1 {
+    background-image: url('../img/image-deep-earth.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.bg2 {
+    background-image: url('../img/image-night-arcade.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.bg3 {
+    background-image: url('../img/image-soccer-team.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.bg4 {
+    background-image: url('../img/image-grid.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.bg5 {
+    background-image: url('../img/image-from-above.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.bg6 {
+    background-image: url('../img/image-pocket-borealis.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.bg7 {
+    background-image: url('../img/image-curiosity.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.bg8 {
+    background-image: url('../img/image-fisheye.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.ct-img h3 {
+    
+    font-family: 'Josefin Sans';
+    text-transform: uppercase;
+    font-weight: normal;
+    color: var(--color-1);
+    font-size: 26px;
+    padding: 10px;
+}
+
+footer {
+    background-color: var(--color-2);
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.footer-cont {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.footer-logo ul {
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.footer-logo ul li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.footer-logo ul li a {
+    text-decoration: none;
+    color: var(--color-1);
+}
+
+.footer-logo ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-midia {
+    text-align: end;
+}
+
+.footer-midia a {
+    display: inline-block;
+}
+
+.footer-midia a:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-midia a:hover {
+    border-bottom: 2px solid var(--color-1);
+}
+
+.footer-midia p {
+    color: var(--color-4);
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+/*---------------------------------------------*/
+
+@media(max-width: 768px) {
+
+    .nav-title {
+        width: 100%;
+    }
+
+    .nav-title h1 {
+        font-size: 42px;
+    }
+
+    .about-cont {
+        padding: 30px 20px 0 20px;
+        flex-direction: column;
+    }
+
+    .about-img {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    
+    .about-text {
+        width: 100%;
+        padding: 0px;
+        top: 0;
+        left: 0px;
+        text-align: center;
+    }
+
+    .about-text p {
+        padding: 0 10px;
+        font-size: 15px;
+    }
+
+    section.creations {
+        padding: 100px 0 80px 0;
+    }
+
+    .criations-cont {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .criations-title {
+        justify-content: center;
+    }
+
+    .btn-d {
+        display: none;
+    }
+
+    .btn-m {
+        display: inline-block;
+        padding: 10px 50px;
+        border: 1px solid var(--color-2);
+        border-radius: 2px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: var(--color-2);
+        margin-top: 40px;
+    }
+
+    .criations-img {
+        justify-content: center;
+        padding: 80px 10px 0 10px;
+    }
+
+    .ct-img {
+        width: 100%;
+        height: 240px;
+        display: flex;
+    }
+
+    .ct-img:not(:last-child) {
+        margin: 0 0 30px 0;
+    }
+
+    .bg1 {
+        background-image: url('../img/image-deep-earth-m.jpg');
+    }
+    
+    .bg2 {
+        background-image: url('../img/image-night-arcade-m.jpg');
+    }
+    
+    .bg3 {
+        background-image: url('../img/image-soccer-team-m.jpg');
+    }
+    
+    .bg4 {
+        background-image: url('../img/image-grid-m.jpg');
+    }
+    
+    .bg5 {
+        background-image: url('../img/image-from-above-m.jpg');
+    }
+    
+    .bg6 {
+        background-image: url('../img/image-pocket-borealis-m.jpg');
+    }
+    
+    .bg7 {
+        background-image: url('../img/image-curiosity-m.jpg');
+    }
+    
+    .bg8 {
+        background-image: url('../img/image-fisheye-m.jpg');
+    }
+
+    .ct-img h3 {
+        padding: 20px;
+    }
+
+    .footer-cont {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 0 50px 0;
+    }
+
+    .footer-logo ul li:not(:last-child) {
+        margin: 0 0 20px 0;
+    }
+
+    .footer-midia {
+        text-align: center;
+    }
+
+}

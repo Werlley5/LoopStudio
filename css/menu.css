@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+:root {
+    --color-1: hsl(0, 0%, 100%);
+    --color-2: hsl(0, 0%, 0%);
+    --color-3: hsl(0, 0%, 55%);
+    --color-4: hsl(0, 0%, 41%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alata';
+}
+
+@media(max-width: 768px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+        
+    .hamburger {
+        width: 1.6rem;
+        height: 1.3rem;
+        position: absolute;
+        z-index: 5;
+        right: 2rem;
+        top: 1.7rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        transition: all .3s;
+    }
+
+    .show-menu .hamburger {
+        position: fixed;
+        right: 2rem;
+    }
+
+    .line {
+        width: 100%;
+        height: .2rem;
+        padding: 1px;
+        background-color: var(--color-1);
+        transition: .7s;
+    }
+
+    .show-menu #line1 {
+        transform: rotate(45deg) translate(.2rem, .7rem);
+        background-color: var(--color-1);
+        box-shadow: none;
+    }
+
+    .show-menu #line2 {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .show-menu #line3 {
+        transform: rotate(-45deg) translate(.1rem, -.6rem);
+        background-color: var(--color-1);
+        box-shadow: none;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: 100vh;
+        background: var(--color-2);
+        position: fixed;
+        top: 0;
+        right: -70rem;
+        transition: all .9s;
+    }
+
+    .show-menu .sidebar {
+        right: 0;
+    }
+
+    .mobile-logo {
+        margin-top: 30px;
+        padding-left: 20px;
+    }
+
+    .menu {
+        position: absolute;
+        top: 40%;
+        left: 18%;
+        transform: translate(-50%, -50%);
+        list-style: none;
+    }
+
+    .menu li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .menu li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Josefin Sans';
+        color: var(--color-1);
+    }
+
+}
